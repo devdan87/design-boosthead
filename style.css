@@ -1,0 +1,152 @@
+* {
+  margin: O;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+body {
+  background-color: #8317e8;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+li {
+  margin-right: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+#logo {
+  position: relative;
+  bottom: 70px;
+  font-family: "Melly Honney Demo Version.otf";
+  font-size: 100px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@font-face {
+  font-family: "Melly Honney Demo Version.otf";
+  src: url(font/Melly\ Honney\ Demo\ Version.otf);
+}
+
+@font-face {
+  font-family: "Butler_Black.otf";
+  src: url(font/Butler_Black.otf);
+}
+
+a,
+p,
+button,
+h1 {
+  font-family: "Butler_Black.otf";
+}
+
+h1 {
+  color: antiquewhite;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  text-align: left;
+}
+
+.section1 {
+  display: flex;
+  margin-left: 30px;
+}
+
+#main-img {
+  width: 700px;
+  position: relative;
+  bottom: 150px;
+}
+
+button {
+  background-color: #ac84d2;
+  border-radius: 25px 25px 25px 25px;
+
+  padding-left: 3px;
+  padding-right: 3px;
+  color: antiquewhite;
+  height: 30px;
+  border: 3px whitesmoke solid;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.last-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#img1,
+#img2 {
+  width: 300px;
+  height: 200px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px whitesmoke solid;
+}
+
+#burger {
+  width: 50px;
+  z-index: 1000;
+  display: none;
+  position: relative;
+}
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+  #w,
+  #p,
+  #c,
+  #a {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+  }
+
+  #burger {
+    display: block;
+    left: 20px;
+    bottom: 50px;
+  }
+
+  .section1 {
+    flex-direction: column;
+  }
+
+  #main-img {
+    width: 290px;
+    top: 10px;
+  }
+}
+
+
+@media all and (width: 768px){
+    .menu{
+        width: 1000px;
+    }
+}
